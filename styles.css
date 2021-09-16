@@ -1,0 +1,445 @@
+/* FONTS
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Staatliches', cursive;
+
+*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+
+.navbar-brand {
+    font-family: 'The Octopus', sans-serif;
+    font-size: 3em;
+    color: #555;
+}
+
+.nav-container {
+    justify-content: start;
+}
+
+.nav-link {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.nav-link.active {
+    border-bottom: 1px solid rgba(252, 225, 151, 0.3);
+}
+
+#vertical-bar {
+    color: white;
+    font-size: 4em;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: auto;
+    font-weight: lighter;
+}
+.navbar-brand-title {
+  font-family: 'Staatliches', cursive;
+  font-size: 2.5em;
+  padding: 0;
+}
+
+.navbar-nav {
+    
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+    /* padding-left: 0%;
+    padding-right: 0%;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) */
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%   { transform: translate(2px, -4px); }
+    100%   { transform: translate(0px, 0px); }   
+}
+
+
+
+
+.cover {
+    position: relative;
+    width: 100%;
+    margin: 0px auto 0;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+.cover-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+
+}
+
+
+#our-work {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
+}
+
+.portfolio-background {
+    /* background-image: linear-gradient(176deg, #fafafa 70%, #1b1922 calc(70% + 2px)); */
+    margin-top: 0px;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.card-title {
+    font-family: 'Staatliches', cursive;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.1);
+ }
+
+
+.btn {
+    border-radius: 25px;
+}
+
+.card-body .btn {
+    width: 50%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-body {
+   display: flex;
+   flex-direction: column;
+
+}
+
+header{
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      0 calc(100% - 6vw)
+    );
+    background-color: #172e35;
+    margin-top: 0px;
+    height: auto;
+    color: white;
+  }
+
+  .quote-section {
+
+    font-weight: lighter;
+    font-size: 2rem;
+    height: fit-content
+
+   
+}
+
+.quote-text {
+    padding-top: 22%;
+    padding-bottom: 15%;
+    font-style: italic;
+}
+
+
+
+.contact-div {
+    background-image:
+        linear-gradient(rgba(252, 225, 151, 0.5), rgba(255, 231, 166, 0.5)),
+        url('./backgrounds/coast.jpg');
+    background-size: cover;
+    clip-path: polygon(
+        0 0,
+        100% 3%,
+        100% 100%,
+        0 100%
+      );
+    
+}
+
+.contact-section {
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
+
+
+
+hr {
+    /* color: rgb(247, 234, 179); */
+    opacity: 80%;
+    height: 1px;
+    border: none;
+    border-top: 2px solid rgb(8, 26, 43);
+    overflow: visible;
+    margin-bottom: 12%;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }
+
+
+  @media only screen and (min-width: 300px) and (max-width: 413px) {
+    .navbar-brand-title {
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    #vertical-bar {
+       font-size: 2em;
+    }
+    
+    #our-work {
+        font-size: 1rem;
+    }
+    .about-top-text {
+        font-size: 2rem;
+        padding-bottom: 10%;
+    }
+    .about-paragraph {
+        font-size: 1.25rem;
+        padding-bottom: 20%;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        padding-top: 30%;
+    }
+
+    .floating {
+        margin-right: -5%;
+    }
+    
+    .nav-link {
+       width: 45%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    
+  
+    
+}
+
+
+@media only screen and (min-width: 414px) and (max-width: 570px) {
+    .navbar-brand-title {
+        font-size: 1.25em;
+        margin-bottom: 0;
+    }
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    #vertical-bar {
+       font-size: 2em;
+    }
+    
+    #our-work {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: .5rem;
+    }
+    .about-top-text {
+        font-size: 2rem;
+        padding-bottom: 10%;
+    }
+    .about-paragraph {
+        font-size: 1.25rem;
+        padding-bottom: 20%;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        padding-top: 30%;
+    }
+
+    .floating {
+        margin-right: -2%;
+    }
+    
+    .nav-link {
+       width: 30%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    
+  
+    
+}
+
+@media only screen and (min-width: 571px) and (max-width: 900px) {
+    .navbar-brand-title {
+        font-size: 1.25em;
+        margin-bottom: 0;
+    }
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    #vertical-bar {
+       font-size: 2em;
+    }
+    
+    #our-work {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size:1rem;
+    }
+    .about-top-text {
+        font-size: 2rem;
+        padding-bottom: 10%;
+    }
+    .about-paragraph {
+        font-size: 1.25rem;
+        padding-bottom: 20%;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        padding-top: 30%;
+    }
+
+    .floating {
+        margin-right: -2%;
+    }
+    
+    .nav-link {
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1384px) {
+    .navbar-brand-title {
+        font-size: 1.7em;
+        margin-bottom: 0;
+    }
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    #vertical-bar {
+       font-size: 2em;
+    }
+    
+    #our-work {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: .5rem;
+    }
+    .about-top-text {
+        font-size: 2rem;
+        padding-bottom: 10%;
+    }
+    .about-paragraph {
+        font-size: 1.25rem;
+        padding-bottom: 20%;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        padding-top: 30%;
+    }
+
+    .floating {
+        margin-right: -2%;
+    }
+    
+    .nav-link {
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1385px) {
+   
+    .navbar-nav {
+    
+        font-family: 'Staatliches', cursive;
+        font-size: 1.5em;
+        padding-left: 0%;
+        padding-right: 0%;
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+  
+    
+}

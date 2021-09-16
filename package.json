@@ -1,0 +1,17 @@
+{
+  "name": "krakenwoodwurks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "anime": "^0.1.2",
+    "animejs": "^3.2.1",
+    "lightgallery": "^2.2.1"
+  }
+}
