@@ -1,0 +1,450 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    padding-right: 0px;
+    margin-right: 0px;
+    background-color: #FBFBFD;
+}
+
+.navbar-brand {
+    font-family: 'The Octopus', sans-serif;
+    font-size: 3em;
+    color: #555;
+}
+
+.nav-container {
+    justify-content: start;
+}
+
+.nav-link {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.nav-link.active {
+    border-bottom: 1px solid rgba(252, 225, 151, 0.3);
+}
+
+#vertical-bar {
+    color: white;
+    font-size: 4em;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: auto;
+    font-weight: lighter;
+}
+.navbar-brand-title {
+  font-family: 'Staatliches', cursive;
+  font-size: 2.5em;
+  padding: 0;
+}
+
+.navbar-nav {
+    
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+    /* padding-left: 0%;
+    padding-right: 0%;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) */
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%   { transform: translate(2px, -4px); }
+    100%   { transform: translate(0px, 0px); }   
+}
+
+.about-div {
+    background-image:
+        linear-gradient(rgba(250, 222, 179, 0.4), rgba(241, 205, 149, 0.4)),
+        url('./woodworking.jpg');
+    background-size: cover;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 4vw)
+      );
+      padding-bottom: 15%;
+      padding-top: 5%;
+}
+
+.about-title {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-size: 3.5rem;
+}
+
+.about-text {
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 1.2rem;
+}
+
+
+
+/* .team-title-div {
+    padding-top: 10%;
+    padding-bottom: 10%;
+} */
+
+.card {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.card-title {
+    font-family: 'Staatliches', cursive;
+}
+
+.cards-div {
+    gap: 5%;
+}
+
+
+.footer {
+    padding-top: 20%;
+}
+
+/* header{
+    clip-path: polygon(
+      0 0,
+      100% 4%,
+      100% 100%,
+      0 calc(100% - 6vw)
+    );
+    background-color: #172e35;
+    padding-top: 25%;
+    padding-bottom: 20%;
+    height: auto;
+    color: white;
+  } */
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 413px) {
+    .navbar-brand-title {
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    #vertical-bar {
+       font-size: 2em;
+    }
+    
+    #our-work {
+        font-size: 1rem;
+    }
+    .about-top-text {
+        font-size: 2rem;
+        padding-bottom: 10%;
+    }
+    .about-paragraph {
+        font-size: 1.25rem;
+        padding-bottom: 20%;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        padding-top: 30%;
+    }
+
+    .floating {
+        margin-right: -5%;
+    }
+    
+    .nav-link {
+       width: 45%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    header{
+        clip-path: polygon(
+          0 0,
+          100% 2%,
+          100% 100%,
+          0 calc(100% - 6vw)
+        );
+        background-color: #172e35;
+        padding-top: 25%;
+        padding-bottom: 20%;
+        height: auto;
+        
+      }
+      .team-title-div {
+        padding-top: 45%;
+        padding-bottom: 45%;
+    }
+  
+    
+}
+
+
+@media only screen and (min-width: 414px) and (max-width: 570px) {
+    .navbar-brand-title {
+        font-size: 1.25em;
+        margin-bottom: 0;
+    }
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    #vertical-bar {
+       font-size: 2em;
+    }
+    
+    #our-work {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: .5rem;
+    }
+    .about-top-text {
+        font-size: 2rem;
+        padding-bottom: 10%;
+    }
+    .about-paragraph {
+        font-size: 1.25rem;
+        padding-bottom: 20%;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        padding-top: 30%;
+    }
+
+    .floating {
+        margin-right: -2%;
+    }
+    
+    .nav-link {
+       width: 30%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .team-title-div {
+        padding-top: 40%;
+        padding-bottom: 40%;
+    }
+
+    header{
+        clip-path: polygon(
+          0 0,
+          100% 2%,
+          100% 100%,
+          0 calc(100% - 6vw)
+        );
+        background-color: #172e35;
+        padding-top: 25%;
+        padding-bottom: 20%;
+        height: auto;
+        
+      }
+    
+    
+  
+    
+}
+
+@media only screen and (min-width: 571px) and (max-width: 900px) {
+    .navbar-brand-title {
+        font-size: 1.25em;
+        margin-bottom: 0;
+    }
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    #vertical-bar {
+       font-size: 2em;
+    }
+    
+    #our-work {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size:1rem;
+    }
+    .about-top-text {
+        font-size: 2rem;
+        padding-bottom: 10%;
+    }
+    .about-paragraph {
+        font-size: 1.25rem;
+        padding-bottom: 20%;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        padding-top: 30%;
+    }
+
+    .floating {
+        margin-right: -2%;
+    }
+    
+    .nav-link {
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    header{
+        clip-path: polygon(
+          0 0,
+          100% 4%,
+          100% 100%,
+          0 calc(100% - 6vw)
+        );
+        background-color: #172e35;
+        padding-top: 20%;
+        padding-bottom: 15%;
+        height: auto;
+        
+      }
+      .team-title-div {
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1384px) {
+    .navbar-brand-title {
+        font-size: 1.7em;
+        margin-bottom: 0;
+    }
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    #vertical-bar {
+       font-size: 2em;
+    }
+    
+    #our-work {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: .5rem;
+    }
+    .about-top-text {
+        font-size: 2rem;
+        padding-bottom: 10%;
+    }
+    .about-paragraph {
+        font-size: 1.25rem;
+        padding-bottom: 20%;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        padding-top: 30%;
+    }
+
+    .floating {
+        margin-right: -2%;
+    }
+    
+    .nav-link {
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    header{
+        clip-path: polygon(
+          0 0,
+          100% 4%,
+          100% 100%,
+          0 calc(100% - 6vw)
+        );
+        background-color: #172e35;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        height: auto;
+     
+      }
+      .team-title-div {
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1385px) {
+   
+    .navbar-nav {
+    
+        font-family: 'Staatliches', cursive;
+        font-size: 1.5em;
+        padding-left: 0%;
+        padding-right: 0%;
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    header{
+        clip-path: polygon(
+          0 0,
+          100% 6%,
+          100% 100%,
+          0 calc(100% - 6vw)
+        );
+        background-color: #172e35;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        height: auto;
+        
+      }
+
+      .team-title-div {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+  
+    
+}
